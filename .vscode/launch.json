@@ -1,13 +1,31 @@
 {
-    "version": "0.2.0",
     "configurations": [
         {
             "type": "firefox",
             "request": "launch",
-            "name": "Launch Firefox",
-            "url": "http://127.0.0.1:5500",
-            "webRoot": "${workspaceFolder}",
-            "reAttach": true
+            "reAttach": true,
+            "name": "Launch add-on",
+            "addonPath": "${workspaceFolder}"
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch localhost",
+            "url": "http://localhost/index.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch index.html",
+            "file": "${workspaceFolder}/index.html"
+        },
+        {
+            "type": "firefox",
+            "request": "attach",
+            "name": "Attach"
         }
     ]
 }
