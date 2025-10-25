@@ -35,14 +35,14 @@ main {
     padding: 0 1rem;
 }
 
-.workout-section {
+.mobility-section {
     background: white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.workout-section h2 {
+.mobility-section h2 {
     color: #667eea;
     margin-bottom: 1rem;
 }
@@ -54,7 +54,7 @@ footer {
     margin-top: 2rem;
 }
 
-.workout-card {
+.mobility-card {
     background: #f8f9fa;
     padding: 1.5rem;
     margin: 1rem 0;
@@ -63,18 +63,17 @@ footer {
     transition: transform 0.2s;
 }
 
-.workout-card:hover {
+.mobility-card:hover {
     transform: translateX(5px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.workout-card h3 {
+.mobility-card h3 {
     color: #667eea;
     margin-bottom: 0.5rem;
 }
 
-.workout-card p {
+.mobility-card p {
     margin: 0.3rem 0;
     color: #555;
 }
-

@@ -1,8 +1,8 @@
 // Log di avvio
 console.log("🚀 Fitness Tracker caricato!");
 
-// Dati di esempio per i workout
-const workouts = [
+// dali di exempli per i mobility
+const mobilitys = [
     {
         nome: "Push-ups",
         categoria: "Upper Body",
@@ -26,32 +26,32 @@ const workouts = [
     }
 ];
 
-// Funzione per mostrare i workout
-function mostraWorkouts() {
-    console.log("📋 Caricamento workout...");
+// Funzione per mostrare i mobility
+function mostramobilitys() {
+    console.log("📋 Caricamento mobility...");
 
-    const workoutSection = document.querySelector('.workout-section');
+    const mobilitySection = document.querySelector('.mobility-section');
 
-    // Crea HTML per ogni workout
-    let workoutsHTML = '<h2>I Tuoi Workout</h2>';
+    // Crea HTML per ogni mobility
+    let mobilitysHTML = '<h2>I Tuoi mobility</h2>';
 
-    workouts.forEach((workout, index) => {
-        console.log(`Workout ${index + 1}:`, workout);
+    mobilitys.forEach((mobility, index) => {
+        console.log(`mobility ${index + 1}:`, mobility);
 
-        workoutsHTML += `
-            <div class="workout-card">
-                <h3>${workout.nome}</h3>
-                <p><strong>Categoria:</strong> ${workout.categoria}</p>
-                <p><strong>Serie:</strong> ${workout.serie}</p>
-                <p><strong>Ripetizioni:</strong> ${workout.ripetizioni || workout.durata}</p>
-                <p><strong>Difficoltà:</strong> ${workout.difficolta}</p>
+        mobilitysHTML += `
+            <div class="mobility-card">
+                <h3>${mobility.nome}</h3>
+                <p><strong>Categoria:</strong> ${mobility.categoria}</p>
+                <p><strong>Serie:</strong> ${mobility.serie}</p>
+                <p><strong>Ripetizioni:</strong> ${mobility.ripetizioni || mobility.durata}</p>
+                <p><strong>Difficoltà:</strong> ${mobility.difficolta}</p>
             </div>
         `;
     });
 
-    workoutSection.innerHTML = workoutsHTML;
-    console.log("✅ Workout caricati con successo!");
+    mobilitySection.innerHTML = mobilitysHTML;
+    console.log("✅ mobility caricati con successo!");
 }
 
 // Esegui quando la pagina è caricata
-document.addEventListener('DOMContentLoaded', mostraWorkouts);
+document.addEventListener('DOMContentLoaded', mostramobilitys);
